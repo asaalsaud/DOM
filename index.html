@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h3>Clicks: <span id= "clicks">0</span></h3>
+    <button type="button" onclick="add()">+</button>
+    <div id="first-div">
+        <h1>Programming language</h1>
+        <ul class="languages">
+            <li id="first-li">JavaSript</li>
+            <li id="second-li">kotlin</li>
+            <li id="last-li">swift</li>
+        </ul>
+    </div>
+    <script>
+        //let text = document.querySelector('.languages p')
+        //console.log(text)
+
+       // let android = document.querySelector("#second-li")
+       // android.innerText = "java"
+       // android.style.color = "blue"
+
+       // let languagelist = document.querySelector(".languages")
+       // let ruby = document.createElement("li")
+        //ruby.innerText = "Ruby"
+        //languagelist.append(ruby)
+        
+       // let ios = document.querySelectorAll("li")[2]
+       // ios.remove()
+        // console.log(languagelist)
+
+        let clicks = 0;
+        function add(){
+            clicks++;
+            document.getElementById("clicks").innerText = clicks
+        };
+
+    </script>
+</body>
+</html>
